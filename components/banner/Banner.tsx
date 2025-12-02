@@ -31,7 +31,7 @@ export default function Banner() {
 
           <Link
             href="/products"
-            className="inline-block mt-2 sm:mt-4 bg-red-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition"
+            className="inline-block mt-2 sm:mt-4 bg-green-500 text-black px-6 py-3 rounded-lg font-semibold hover:bg-green-500 transition"
           >
             Explore More
           </Link>

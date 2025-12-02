@@ -48,7 +48,7 @@ export default function ContactPage() {
         <div className="flex flex-col justify-center h-full w-full flex-1">
           <Card className="w-full h-full shadow-lg hover:shadow-xl transition">
             <CardHeader>
-              <CardTitle className="text-orange-600 text-2xl sm:text-3xl font-bold">
+              <CardTitle className="text-green-500 text-2xl sm:text-3xl font-bold">
                 Let&apos;s get Connected
               </CardTitle>
               <p className="text-sm sm:text-base text-gray-500">For a no-cost Quote</p>

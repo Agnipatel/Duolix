@@ -12,7 +12,7 @@ export default function Footer() {
         {/* 1️⃣ Company Info */}
         <div>
           <Image
-            src="/d_logo.png" // place your logo in public folder
+            src="/d_logo.png"
             alt="Duolix Logo"
             width={150}
             height={50}
@@ -67,14 +67,19 @@ export default function Footer() {
       {/* Bottom Section */}
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
         <p>
-          ©2024 Duolix. Design & Developed By{" "}
-          <span className="text-white font-medium"> Solutions.</span>
+          ©2025 Duolix. Designed & Developed By{" "}
+          <Link
+            href="https://usdunique.in"
+            target="_blank"
+            className="text-white font-medium hover:underline"
+          >
+            usdunique.in
+          </Link>
         </p>
-
-       
       </div>
-      <SocialFooter/>
-      <WhatsAppButton/>
+
+      <SocialFooter />
+      <WhatsAppButton />
     </footer>
   );
 }

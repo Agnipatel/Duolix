@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useRef } from "react";
+import type { Swiper as SwiperType } from "swiper";
 import Image from "next/image";
 import Link from "next/link";
 import { ShoppingCart, Star, ChevronLeft, ChevronRight } from "lucide-react";
@@ -11,7 +12,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 export default function ProductsPage() {
-  const [swiperRef, setSwiperRef] = useState(null);
+  const swiperRef = useRef<SwiperType | null>(null);
 
   return (
     <section className="py-16 bg-white relative">
@@ -23,9 +24,10 @@ export default function ProductsPage() {
       </div>
 
       <div className="relative max-w-6xl mx-auto px-6">
+
         {/* Left Arrow */}
         <button
-          onClick={() => swiperRef?.slidePrev()}
+          onClick={() => swiperRef.current?.slidePrev()}
           className="absolute -left-6 top-1/2 transform -translate-y-1/2 bg-green-100 hover:bg-green-200 p-3 rounded-full shadow-md z-10"
         >
           <ChevronLeft className="text-green-600" size={24} />
@@ -33,7 +35,9 @@ export default function ProductsPage() {
 
         <Swiper
           modules={[Navigation]}
-          onSwiper={setSwiperRef}
+          onBeforeInit={(swiper) => {
+            swiperRef.current = swiper;
+          }}
           slidesPerView={4}
           spaceBetween={20}
           loop={true}
@@ -85,12 +89,12 @@ export default function ProductsPage() {
 
         {/* Right Arrow */}
         <button
-          onClick={() => swiperRef?.slideNext()}
+          onClick={() => swiperRef.current?.slideNext()}
           className="absolute -right-6 top-1/2 transform -translate-y-1/2 bg-green-100 hover:bg-green-200 p-3 rounded-full shadow-md z-10"
         >
           <ChevronRight className="text-green-600" size={24} />
-        </button> 
+        </button>
       </div>
-    </section> 
+    </section>
   );
 }

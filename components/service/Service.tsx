@@ -9,7 +9,7 @@ export default function WhatWeDo() {
     <section className="py-2 sm:py-4 md:py-4 bg-gray-50">
       {/* Section Header */}
       <div className="text-center mb-10 sm:mb-12 px-4">
-        <p className="text-blue-600 text-5xl font-semibold uppercase tracking-wide text-sm sm:text-base">
+        <p className="text-green-500 text-6xl font-semibold uppercase tracking-wide text-sm sm:text-base">
           Our Services
         </p>
        
@@ -47,7 +47,7 @@ export default function WhatWeDo() {
             {/* Learn More Button */}
             <Link
               href={`/services/${service.id}`}
-              className="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 px-6 rounded-full text-sm sm:text-base transition-all"
+              className="mt-auto inline-block bg-green-500 hover:bg-green-500 text-white font-medium py-2.5 px-6 rounded-full text-sm sm:text-base transition-all"
             >
               Learn More
             </Link>

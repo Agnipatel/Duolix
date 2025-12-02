@@ -37,7 +37,7 @@ export default function FeaturesPage() {
   return (
     <section className="bg-white flex flex-col items-center justify-center py-12 px-4 sm:px-6 md:px-10 lg:px-20">
       {/* Title */}
-      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-8 sm:mb-10 text-center">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-500 mb-8 sm:mb-10 text-center">
         Why Choose Us
       </h1>
 
@@ -46,7 +46,7 @@ export default function FeaturesPage() {
         {features.map((item, index) => (
           <div
             key={index}
-            className="border border-gray-200 rounded-2xl flex flex-col items-center justify-center p-4 sm:p-5 md:p-6 shadow-sm hover:shadow-md transition duration-300 bg-white hover:scale-105"
+            className="border border-green-400 rounded-2xl flex flex-col items-center justify-center p-4 sm:p-5 md:p-6 shadow-sm hover:shadow-md transition duration-300 bg-white hover:scale-105"
           >
             {/* Icon */}
             <div className="relative w-14 h-14 sm:w-20 sm:h-20 md:w-24 md:h-24 mb-3 sm:mb-4">
