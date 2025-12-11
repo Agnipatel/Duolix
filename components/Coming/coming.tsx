@@ -6,15 +6,15 @@ export default function ComingSoonPage() {
   const projects = [
     {
       id: 1,
-      title: "Eco Wash Detergent",
-      desc: "Pure, natural, and eco-friendly detergent for your daily wash.",
+      title: "Tea Pathi",
+      desc: "Premium Tea Pathi is made from handpicked, high-quality tea leaves known for their rich aroma and strong natural flavor.",
       img: "/product/p11 tea.jpeg",
     },
     {
       id: 2,
       title: "Natural Floor Cleaner",
       desc: "Fresh fragrance, streak-free shine — coming soon to your home!",
-      img: "/product/p12 d1.jpeg",
+      img: "/image.png",
     },
     // Add more projects here
   ];

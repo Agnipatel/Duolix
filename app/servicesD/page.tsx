@@ -32,9 +32,9 @@ export default function ServicesPage() {
                   <p className="text-sm text-gray-600 mt-2">{p.description}</p>
 
                   <div className="mt-4 flex items-baseline gap-3">
-                    <span className="text-xl font-bold text-teal-600">${discountedPrice}</span>
+                    <span className="text-xl font-bold text-teal-600">{discountedPrice}</span>
                     {p.discountPercent ? (
-                      <span className="text-sm line-through text-gray-400">${p.price}</span>
+                      <span className="text-sm line-through text-gray-400">{p.price}</span>
                     ) : null}
                   </div>
                 </div>

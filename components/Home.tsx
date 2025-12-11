@@ -94,8 +94,8 @@ export default function HomePage() {
           images={[
             "/product/p2 shop.jpeg",
             "/product/p3 shop.jpeg",
-            "/images/sofa.jpg",
-            "/product/p4 shop.jpeg",
+            "/product/banner 2.jpeg",
+            "/product/p6 cake.jpeg",
           ]}
         />
       </div>
